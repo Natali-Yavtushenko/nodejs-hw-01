@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "id": "dc9907a5-31f9-4f74-8805-464ad73e7762",
+    "name": "Lori Haag-Kovacek",
+    "phone": "281.873.9501",
+    "email": "Cassandra45@yahoo.com",
+    "job": "Corporate Usability Planner"
+  },
+  {
+    "id": "ac3b663b-a4a5-472b-9ae9-0234344f8011",
+    "name": "Roosevelt Jacobi",
+    "phone": "282.629.9063",
+    "email": "Priscilla15@yahoo.com",
+    "job": "Human Branding Manager"
+  },
+  {
+    "id": "6a896318-0202-4b8c-ac0f-10af2c665bf9",
+    "name": "Ashley Goyette",
+    "phone": "(268) 467-8071",
+    "email": "Gina4@hotmail.com",
+    "job": "Human Factors Assistant"
+  },
+  {
+    "id": "3149f49d-830d-4da4-9945-041d9f4e1df9",
+    "name": "Domingo Moore",
+    "phone": "(917) 812-9155",
+    "email": "Shawn_Braun@hotmail.com",
+    "job": "Corporate Division Orchestrator"
+  }
+]
