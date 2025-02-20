@@ -1,9 +1,11 @@
 import fs from 'fs/promises';
-import { PATH_DB } from '../constants/contacts.js';
+import path from 'node:path';
+
+const dbPath = path.resolve('src/db/db.json');
 
 export const countContacts = async () => {
   try {
-    const data = await fs.readFile(PATH_DB, 'utf-8');
+    const data = await fs.readFile(dbPath, 'utf-8');
     const contacts = JSON.parse(data);
 
     if (!Array.isArray(contacts)) {
