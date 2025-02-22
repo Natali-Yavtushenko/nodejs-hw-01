@@ -1,7 +1,9 @@
 import fs from 'fs/promises';
 import path from 'node:path';
 
-const dbPath = path.resolve('src/db/db.json');
+import { PATH_DB } from '../constants/contacts.js';
+
+const dbPath = path.resolve(PATH_DB);
 
 export const countContacts = async () => {
   try {

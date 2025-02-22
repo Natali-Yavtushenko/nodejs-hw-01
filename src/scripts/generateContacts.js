@@ -3,7 +3,9 @@ import { readContacts } from '../utils/readContacts.js';
 import { createFakeContact } from '../utils/createFakeContact.js';
 import path from 'node:path';
 
-const dbPath = path.resolve('src/db/db.json');
+import { PATH_DB } from '../constants/contacts.js';
+
+const dbPath = path.resolve(PATH_DB);
 
 const generateContacts = async (number) => {
   try {
