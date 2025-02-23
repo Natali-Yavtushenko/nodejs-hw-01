@@ -1,11 +1,8 @@
 import fs from 'fs/promises';
 import { readContacts } from '../utils/readContacts.js';
 import { createFakeContact } from '../utils/createFakeContact.js';
-import path from 'node:path';
 
 import { PATH_DB } from '../constants/contacts.js';
-
-const dbPath = path.resolve(PATH_DB);
 
 const generateContacts = async (number) => {
   try {
@@ -15,7 +12,7 @@ const generateContacts = async (number) => {
 
     const updateContacts = [...contacts, ...newContacts];
 
-    await fs.writeFile(dbPath, JSON.stringify(updateContacts, null, 2));
+    await fs.writeFile(PATH_DB, JSON.stringify(updateContacts, null, 2));
 
     console.log(`Успішно додано ${number} контактів!`);
   } catch (error) {
